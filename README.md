@@ -2,7 +2,7 @@
 [![LICENSE](https://img.shields.io/github/license/smartsolutionsitaly/cakephp-locale-type.svg)](LICENSE)
 [![packagist](https://img.shields.io/badge/packagist-smartsolutionsitaly%2Fcakephp--locale--type-brightgreen.svg)](https://packagist.org/packages/smartsolutionsitaly/cakephp-locale-type)
 [![issues](https://img.shields.io/github/issues/smartsolutionsitaly/cakephp-locale-type.svg)](https://github.com/smartsolutionsitaly/cakephp-locale-type/issues)
-[![CakePHP](https://img.shields.io/badge/CakePHP-3.5%2B-brightgreen.svg)](https://github.com/cakephp/cakephp)
+[![CakePHP](https://img.shields.io/badge/CakePHP-3.6%2B-brightgreen.svg)](https://github.com/cakephp/cakephp)
 
 Locale type for [CakePHP](https://github.com/cakephp/cakephp)
 
