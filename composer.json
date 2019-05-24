@@ -1,44 +1,44 @@
 {
-	"name" : "smartsolutionsitaly/cakephp-locale-type",
-	"description" : "Locale type for CakePHP",
-	"keywords" : [
-		"cakephp",
-		"database",
-        "type",
-		"locale"
-	],
-	"type" : "cakephp-plugin",
-	"license" : "MIT",
-	"require" : {
-		"ext-intl" : "*"
-	},
-	"require-dev" : {
-		"cakephp/cakephp" : "^3.6"
-	},
-	"autoload" : {
-		"psr-4" : {
-			"SmartSolutionsItaly\\CakePHP\\" : "src"
-		}
-	},
-	"autoload-dev" : {
-		"psr-4" : {
-			"SmartSolutionsItaly\\CakePHP\\Database\\Test\\" : "tests",
-			"Cake\\Test\\" : "./vendor/cakephp/cakephp/tests"
-		}
-	},
-	"homepage" : "https://github.com/smartsolutionsitaly/cakephp-locale-type",
-	"authors" : [
-		{
-			"name" : "Lucio Benini",
-			"email" : "dev@smartsolutions.it",
-			"homepage" : "https://smartsolutions.it",
-			"role" : "Web Developer"
-		}
-	],
-	"support" : {
-		"email" : "info@smartsolutions.it",
-		"issues" : "https://github.com/smartsolutionsitaly/cakephp-locale-type/issues",
-		"wiki" : "https://github.com/smartsolutionsitaly/cakephp-locale-type/wiki",
-		"source" : "https://github.com/smartsolutionsitaly/cakephp-locale-type"
-	}
+  "name" : "smartsolutionsitaly/cakephp-locale-type",
+  "description" : "Locale type for CakePHP",
+  "keywords" : [
+    "cakephp",
+    "database",
+    "type",
+    "locale"
+  ],
+  "type" : "cakephp-plugin",
+  "license" : "MIT",
+  "require" : {
+    "ext-intl" : "*"
+  },
+  "require-dev" : {
+    "cakephp/cakephp" : "^3.6"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "SmartSolutionsItaly\\CakePHP\\Database\\" : "src"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "SmartSolutionsItaly\\CakePHP\\Database\\Test\\" : "tests",
+      "Cake\\Test\\" : "./vendor/cakephp/cakephp/tests"
+    }
+  },
+  "homepage" : "https://github.com/smartsolutionsitaly/cakephp-locale-type",
+  "authors" : [
+    {
+      "name" : "Lucio Benini",
+      "email" : "dev@smartsolutions.it",
+      "homepage" : "https://smartsolutions.it",
+      "role" : "Web Developer"
+    }
+  ],
+  "support" : {
+    "email" : "info@smartsolutions.it",
+    "issues" : "https://github.com/smartsolutionsitaly/cakephp-locale-type/issues",
+    "wiki" : "https://github.com/smartsolutionsitaly/cakephp-locale-type/wiki",
+    "source" : "https://github.com/smartsolutionsitaly/cakephp-locale-type"
+  }
 }

@@ -21,8 +21,7 @@
 namespace SmartSolutionsItaly\CakePHP\Database;
 
 /**
- * Class Locale
- *
+ * Locale class.
  * @package SmartSolutionsItaly\CakePHP\Database
  * @author Lucio Benini <dev@smartsolutions.it>
  * @since 1.0.0
@@ -46,7 +45,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Parses a value and returns its Locale representation.
-     *
      * @param $value The value to parse
      * @return null|Locale The Locale representation of the given value or a null value.
      */
@@ -63,7 +61,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Parses the given array and returns its Locale representation.
-     *
      * @param array $value The value to parse.
      * @return Locale The Locale representation of the given value or a null value.
      */
@@ -89,7 +86,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Parses the given string and returns its Locale representation.
-     *
      * @param string $value The value to parse.
      * @return Locale The Locale representation of the given value or a null value.
      */
@@ -112,7 +108,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Gets the language of the current object.
-     *
      * @return null|string The language of the current object.
      */
     public function getLanguage()
@@ -122,7 +117,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Sets the language of the current object.
-     *
      * @param string $value The new value for the locale's language.
      * @return Locale The current object.
      */
@@ -134,7 +128,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Gets the culture of the current object.
-     *
      * @return null|string The culture of the current object.
      */
     public function getCulture()
@@ -144,7 +137,6 @@ class Locale implements \JsonSerializable
 
     /**
      * Sets the culture of the current object.
-     *
      * @param string $value The new value for the locale's culture.
      * @return Locale The current object.
      */
@@ -155,21 +147,16 @@ class Locale implements \JsonSerializable
     }
 
     /**
-     * Convert the current Locale to its array representation.
-     *
-     * @return array An array representation of the current Locale object.
+     * Convert the current Locale to its string representation.
+     * @return string A string representation of the current Locale object.
      */
-    public function toArray()
+    public function __toString()
     {
-        return [
-            'language' => $this->_language,
-            'culture' => $this->_culture
-        ];
+        return $this->toString();
     }
 
     /**
      * Convert the current Locale to its string representation.
-     *
      * @return string A string representation of the current Locale object.
      */
     public function toString()
@@ -182,22 +169,23 @@ class Locale implements \JsonSerializable
     }
 
     /**
-     * Convert the current Locale to its string representation.
-     *
-     * @return string A string representation of the current Locale object.
-     */
-    public function __toString()
-    {
-        return $this->toString();
-    }
-
-    /**
      * Serializes the object to a value that can be serialized natively by json_encode function.
-     *
      * @return array Returns data which can be serialized by json_encode function, which is a value of any type other than a resource.
      */
     public function jsonSerialize()
     {
         return $this->toArray();
+    }
+
+    /**
+     * Convert the current Locale to its array representation.
+     * @return array An array representation of the current Locale object.
+     */
+    public function toArray()
+    {
+        return [
+            'language' => $this->_language,
+            'culture' => $this->_culture
+        ];
     }
 }

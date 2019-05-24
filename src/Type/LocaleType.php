@@ -37,7 +37,6 @@ class LocaleType extends Type implements BatchCastingInterface
 {
     /**
      * {@inheritDoc}
-     *
      * @see \Cake\Database\Type::marshal()
      */
     public function marshal($value)
@@ -47,7 +46,6 @@ class LocaleType extends Type implements BatchCastingInterface
 
     /**
      * {@inheritDoc}
-     *
      * @see \Cake\Database\Type::toPHP()
      */
     public function toPHP($value, Driver $d)
@@ -57,7 +55,6 @@ class LocaleType extends Type implements BatchCastingInterface
 
     /**
      * {@inheritDoc}
-     *
      * @return array
      */
     public function manyToPHP(array $values, array $fields, Driver $driver)
@@ -75,7 +72,6 @@ class LocaleType extends Type implements BatchCastingInterface
 
     /**
      * {@inheritDoc}
-     *
      * @see \Cake\Database\Type::toDatabase()
      */
     public function toDatabase($value, Driver $driver)
@@ -89,7 +85,6 @@ class LocaleType extends Type implements BatchCastingInterface
 
     /**
      * {@inheritDoc}
-     *
      * @see \Cake\Database\Type::toStatement()
      */
     public function toStatement($value, Driver $driver)
